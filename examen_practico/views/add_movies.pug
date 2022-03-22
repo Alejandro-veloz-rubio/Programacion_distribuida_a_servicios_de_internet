@@ -1,0 +1,15 @@
+html
+    head
+        title Agregar Películas
+        link(rel="stylesheet" href="https://getbootstrap.com/docs/5.0/dist/css/bootstrap.min.css")
+        link(rel="stylesheet" href="https://getbootstrap.com/docs/5.0/examples/sign-in/signin.css")
+        meta(name="theme-color" content="#7952b3")
+    body(class="form-signin text-white bg-dark")
+        form(action="/add_Movies" method="post") 
+            div
+                input(type="text" class="form-control form-control-lg" placeholder="Der_Fall_Collini" name="name")
+                p Movie Name
+            div
+                input(type="text" class="form-control form-control-lg" id="floatingPassword" placeholder="bla-bla-bla" name="des")
+                p Description
+                button(class="w-100 btn btn-lg btn-danger" type="submit" name="add") Agregar Película
